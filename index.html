@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Your feedback is valuable to us.</p>
+    </header>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name:
+            <input type="text" id="name" name="name" placeholder="Enter your name"></label>
+            <label for="email" id="email-label">Email:
+            <input type="email" id="email" name="email" required placeholder="Enter your email"></label>
+            <label for="number" id="age-label">Age(optional):
+            <input type="number" id="number" name="age" min="10" max="100" placeholder="Age" ></label>
+            <label id="role-label">What describes your role best?
+                <label for="student-role"><input type="radio" name="role" id="student-role" class="inline">student</label>
+                <label for="professional-role"><input type="radio" name="role" id="professional-role" class="inline">profession</label>
+                <label for="professor-role"><input type="radio" name="role" id="professor-role" class="inline">professor</label>
+                <label for="other-role"><input type="radio" name="role" id="other-role" class="inline">other</label>
+                
+            </label>
+        </fieldset>
+        <fieldset>
+            <label id="heard-from-label" for="dropdown">
+                Where did you heard about us?
+                <select id="dropdown" name="heard-from">
+                    <option>select one</option>
+                    <option>social media</option>
+                    <option>peer referal</option>
+                    <option>search engine</option>
+                    <option>blog or publication</option>
+                    <option>other</option>
+                </select>
+            </label>
+
+            <label id="feature-label">What feature did you like?
+                <label for="course-feature">
+                <input type="checkbox" value="course-management" 
+                id="course-feature" class="inline">course management</label>
+
+                <label for="resource-feature">
+                <input type="checkbox" value="resource-management" 
+                id="resource-feature" class="inline">resource management</label>
+
+                <label for="task-feature">
+                <input type="checkbox" value="task-management" 
+                id="task-feature" class="inline">task management</label>
+
+                <label for="timetable-feature">
+                <input type="checkbox" value="timetable-management" 
+                id="timetable-feature" class="inline">timetable management</label>
+            </label>
+                <label id="textarea-label" for="comments">
+                    Any comments or recommendations?
+                    <textarea cols="30" rows="3" id="comments" name="comments" placeholder="Enter your comments">
+                    </textarea>
+                </label>
+                <input type="submit" id="submit" value="Submit">
+        </fieldset>
+    </form>
+
+</body>
+</html>
